@@ -1,0 +1,205 @@
+body {
+    background-color: black;
+    font-size: 16px;
+    color: white;
+}
+
+/*NAVBAR*/ 
+
+.navbar {
+    height: 60px;
+    background-color: black;
+    display: flex;
+    border-bottom: 1px solid white;
+    justify-content: space-between;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.navbar h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: white;
+    margin: 0;
+    padding-left: 170px;
+}
+
+.logo {
+    height: 50px; 
+    padding-top: 5px;
+}
+
+.navcontents {
+    display: flex;
+    color: white;
+    align-items: center;
+}
+.navcontents p {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.navcontents a {
+    text-decoration: none;
+    color:white;
+}
+
+.navcontents a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+/*ABOUT*/
+
+.aboutbackground {
+    float: center;
+    height: 700px;
+    width: 1500px;
+}
+
+.about .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 1200px;
+    z-index: 500;
+    margin: 0;
+    background-color: black;
+    opacity: .5;
+    width: 100%;
+}
+
+.about h2 {
+    text-decoration: underline;
+}
+
+/*JOIN*/
+
+.join {
+    background-color: rgb(163, 137, 72);
+    padding-bottom: 1px;
+}
+
+.join h2 {
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 2px;
+}
+
+.join h3 {
+    text-align: center;
+    padding-bottom: 2px;
+}
+
+.join a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/*CONQUESTS*/
+
+.conquests {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.conquest {
+    display: inline-block;
+    text-align: center;
+    padding-right: 50px;
+}
+
+.conquest img {
+    height: 200px;
+    width: auto;
+    border-radius: 10%;
+}
+
+.conquests h2 {
+    text-align: center;
+}
+
+.conquest li {
+    list-style: none;
+    padding: 5px;
+    font-size: 20px;
+}
+
+/*TESTIMONIALS*/
+
+.testimonials {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    border: 1px dashed white;
+    margin-bottom: 20px;
+    background-color: rgb(165, 134, 93);
+}
+
+.testimonial {
+    display: inline-block;
+    text-align: center;
+}
+
+.testimonials img {
+    height: 200px;
+    width: 150px;
+    border-radius: 10%;
+    padding-top: 10px;
+}
+
+.testimonials h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*DONATE*/
+
+.donate h2 {
+    padding-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.donate img {
+    height: 75px;
+    width: 100px;
+    border-radius: 10%;
+    padding-right: 15px;
+}
+
+.donate a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/*MEDIA QUERIES*/
+
+@media only screen and (min-width: 600px) and (max-width:1500px) {
+    body {
+        font-size: 1em;
+    }
+
+    img {
+        padding: 5px;
+    }
+
+    .navbar {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar h1 {
+        font-size: 28px;
+        padding-left: 20px;
+    }
+}
